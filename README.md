@@ -95,7 +95,7 @@ If service account passwords are weak or predictable, attackers may crack them o
 ## Screenshots
 
 ### Kerberos TGS Hash Extraction
-![Kerberoasting Hash](screenshots/01_kerberoast_hash_svc_sql.png)
+![Kerberoasting Hash](screenshots/01_Kerberoasting_hash_svc_sql.png)
 
 ### Password Successfully Cracked
 ![Password Cracked](screenshots/02_kerberoast_cracked.png)

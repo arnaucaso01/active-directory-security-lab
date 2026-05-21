@@ -112,8 +112,3 @@ If service account passwords are weak or predictable, attackers may crack them o
 - Attack Simulation
 - Security Documentation
 
----
-
-## Disclaimer
-
-This project was created in a controlled home lab environment for educational and defensive security purposes only.
